@@ -15,6 +15,18 @@
         width: 635px;
     }
 
+    @media (min-width: $breakpoint-mobile) {
+        background: none;
+        width: 100%;
+        display: grid;
+        text-align: center;
+        grid-template-columns: repeat(1,1fr);
+        padding: 0 24px;
+        align-items: center;
+
+    }
+
+
     h1 {
         font-family: 'Chivo';
         font-style: normal;
@@ -32,13 +44,19 @@
             width: 635px;
         }
 
+        @media (min-width: $breakpoint-mobile) {
+            background: none;
+            width: 327px;
+            text-align: center;
+            font-size: 26px;
+            line-height: 38px;
+        }
+
         span {
             color: $white;
 
-            @media (min-width: $breakpoint-tablet) {
-                font-size: 18px;
-                line-height: 28px;
-            }
+
+
 
 
 
@@ -54,6 +72,19 @@
         color: $light-blue-third;
         width: 445px;
         margin-bottom: 40px;
+
+        @media (min-width: $breakpoint-mobile) {
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            width: 327px;
+
+        }
+
+        @media (min-width: $breakpoint-tablet) {
+            font-size: 18px;
+            line-height: 28px;
+        }
     }
 
     .input-container {
@@ -62,6 +93,15 @@
         position: relative;
         align-items: center;
         margin-bottom: 8px;
+
+        @media (min-width: $breakpoint-mobile) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 327px;
+            gap: 16px;
+        }
 
         .input-text {
             width: 427px;
@@ -73,6 +113,10 @@
             outline: none;
             padding-left: 32px;
             color: $white;
+
+            @media (min-width: $breakpoint-mobile) {
+                width: 327px;
+            }
 
             &::placeholder {
                 mix-blend-mode: normal;
@@ -110,8 +154,14 @@
             box-shadow: 0px 2px 4px rgba(84, 230, 175, 0.14);
             border-radius: 28px;
             right: 302px;
+
             @media (min-width: $breakpoint-tablet) {
                 right: 215px;
+            }
+
+            @media (min-width: $breakpoint-mobile) {
+                position: static;
+                width: 327px;
             }
 
             &:hover {

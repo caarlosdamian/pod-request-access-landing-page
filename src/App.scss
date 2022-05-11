@@ -1,15 +1,23 @@
 @import './globals/scss-const.scss';
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
+
+
+
+body {
   height: 100vh;
   background: $dark-blue;
-  padding: 130px 165px ;
+  padding: 130px 165px;
+
   @media (min-width: $breakpoint-tablet) {
     padding: 60px 39px 94px 257px;
+  }
 
-}
+  @media (min-width: $breakpoint-mobile) {
+   position: relative;
+  }
 }
