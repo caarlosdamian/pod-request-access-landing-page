@@ -1,14 +1,28 @@
+@import '../../globals/scss-const.scss';
+
 .top-container{
     position: relative;
     margin-bottom: 191px ;
     .top-background-img{
         position: absolute;
-        right: -160px;
+        right: -300px;
+        &.red{
+            display: none;
+        }
+        @media (min-width: $breakpoint-tablet) {
+            right: -202px;
+            top: -135px;
+        }
     }
     .top-dots-img{
         position: absolute;
         bottom: -640px;
         right: -160px;
+        @media (min-width: $breakpoint-tablet) {
+        bottom:-955px;
+        left: -100px;
+        }
     }
+    
 }
 

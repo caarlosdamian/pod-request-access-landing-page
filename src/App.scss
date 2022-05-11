@@ -8,4 +8,8 @@ body{
   height: 100vh;
   background: $dark-blue;
   padding: 130px 165px ;
+  @media (min-width: $breakpoint-tablet) {
+    padding: 60px 39px 94px 257px;
+
+}
 }
