@@ -1,0 +1,108 @@
+@import '../../globals/scss-const.scss';
+
+.middle-container {
+    background: $dark-blue;
+    width: 723px;
+    height: 509px;
+    z-index: 10;
+    position: absolute;
+
+    h1 {
+        font-family: 'Chivo';
+        font-style: normal;
+        font-weight: 100;
+        font-size: 52px;
+        line-height: 62px;
+        text-transform: uppercase;
+        color: $light-green;
+        width: 665px;
+        margin-bottom: 24px;
+
+        span {
+            color: $white;
+        }
+    }
+
+    p {
+        font-family: 'Chivo';
+        font-style: normal;
+        font-weight: 100;
+        font-size: 18px;
+        line-height: 28px;
+        color: $light-blue-third;
+        width: 445px;
+        margin-bottom: 40px;
+    }
+
+    .input-container {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        align-items: center;
+        margin-bottom: 8px;
+
+        .input-text {
+            width: 427px;
+            border: none;
+            padding: 14px 0;
+            height: 56px;
+            background: $light-blue-primary;
+            border-radius: 28px;
+            outline: none;
+            padding-left: 32px;
+            color: $white;
+
+            &::placeholder {
+                mix-blend-mode: normal;
+                opacity: 0.5;
+                font-family: 'Chivo';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 28px;
+                color: $white;
+
+            }
+
+            &:focus {
+                color: $white;
+                font-family: 'Chivo';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 28px;
+            }
+        }
+
+        .input-button {
+            position: absolute;
+            padding: 9px 27px;
+            background: $light-green;
+            font-family: 'Chivo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 28px;
+            color: $dark-blue ;
+            border: none;
+            box-shadow: 0px 2px 4px rgba(84, 230, 175, 0.14);
+            border-radius: 28px;
+            right: 302px;
+
+            &:hover {
+                background: $light-hover;
+            }
+        }
+    }
+
+    .input-error {
+        color: $red;
+        padding-left: 32px;
+        font-family: 'Chivo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+}
