@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Bottom } from '../bottom/Bottom'
 import './Middle.scss'
 
 export const Middle = () => {
@@ -24,6 +25,7 @@ export const Middle = () => {
         <button className='input-button' onClick={hadleSubmit} >Request Access</button>
       </div>
       {error && <span className='input-error'>Oops! Please check your email</span>}
+      <Bottom/>
     </div>
   )
 }
